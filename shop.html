@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bgimg.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+
+        }
+
+
+        .header-container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .parent_container {
+            display: flex;
+        }
+
+        .logo {
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            color: orange;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .parent_container .first_div {
+            width: 30%;
+        }
+
+        .parent_container .search-bar {
+            width: 70%;
+        }
+
+        .search-bar input {
+            width: 50%;
+        }
+
+        .menu-button a {
+            font-size: 15px;
+            margin: 0px 4px !important;
+        }
+
+        .menu-button a:hover {
+            color: #ffa72b;
+
+        }
+
+        .one {
+            margin: 40px;
+            padding-left: 5px;
+        }
+
+        .one img {
+            padding-top: 40px;
+           
+        }
+
+        .add-to-cart {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="parent_container logo">
+
+            <div class="first_div">Shop<span>Ease</span></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+
+        <nav class="menu-button">
+            <a href="shop.html" target="_blank">Home</a>
+            <a href="products.html" target="_blank">Products</a>
+            <a href="">Cart</a>
+        </nav>
+
+    </header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="one">
+        <h1>Welcome to ShopEase</h1>
+        <p>Your one-stop shop for all your needs!</p>
+        <div data-aos="zoom-out-down" data-aos-duration="2000"><img src="shoppingimg1.jpg" alt="A welcoming image for ShopEase" class="image"></div>
+    </div>
+</body>
+
+</html>
